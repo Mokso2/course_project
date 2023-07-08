@@ -56,8 +56,8 @@ invite(Phone)->
       start(),
       invite(Phone);
 
-    Err ->
-      Err
+    Error ->
+      Error
   end.
 
 
@@ -76,8 +76,8 @@ call(Phone)->
         Error ->
           Error
       end;
-    Err ->
-      Err
+    Error ->
+      Error
   end.
 
 stop()->
